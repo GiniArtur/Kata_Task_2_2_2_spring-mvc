@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This Cars page</title>
+</head>
+<body>
+Hello! This 'cars' page!!!!!!
+All cars:
+<br>
+<br>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>CreateYear</th>
+        <th>Model</th>
+        <th>Series</th>
+    </tr>
+    <tr th:each="car: ${cars}">
+        <td th:text="${car.id}"></td>
+        <td th:text="${car.createYear}"></td>
+        <td th:text="${car.model}"></td>
+        <td th:text="${car.series}"></td>
+    </tr>
+</table>
+<br>
+<br>
+<a href="/">Go to page 'hello'</a>
+</body>
+</html>
